@@ -53,12 +53,13 @@ header nav ul li a:hover {
 .slider {
     display:flex;
     height:400px;
+    width:800px;
     overflow: hidden;
 }
 
 .slider img {
     width: 100%;
-    animation: slide 20s infinite;
+    animation: slide 30s infinite;
 }
 
 @keyframes slide {
