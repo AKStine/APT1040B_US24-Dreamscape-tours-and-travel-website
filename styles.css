@@ -1,0 +1,431 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fda720;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #00aef3;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.slider {
+    display:flex;
+    height:400px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0%);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(0%);}
+}
+
+.appointment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.appointment h2 {
+    color: white;
+    margin: 0;
+}
+
+.appointment button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #fda720;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appointment button:hover {
+    background-color: #00aef3;
+}
+
+.featured-destinations, .exclusive-destinations, .blog {
+    padding: 20px 0;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    text-align:calc();
+    width: 100%;
+    height: 5px;
+    padding: 5px 10px;
+    font-size:medium;
+    font-weight:lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.destination, .blog article {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.destination img, .blog article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.contact-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-section .container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section form input, .contact-section form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #fda720;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-section form button:hover {
+    background-color: #00aef3;
+}
+
+
+
+.about-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    width: 60%;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    width: 45%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    margin: 0;
+    color: #777;
+}
+
+
+
+.booking-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.booking-section .container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.booking-section h2 {
+    margin-bottom: 20px;
+}
+
+.booking-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.booking-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.booking-section form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-section form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-section form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #fda720;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.booking-section form button:hover {
+    background-color: #00aef3;
+}
+
+
+
+.blog-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.blog-section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog-section h2 {
+    margin-bottom: 20px;
+}
+
+.blog-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Gap between articles */
+    padding: 20px;
+}
+
+.blog-column article {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.blog-column article h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-container {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+}
+
+
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    width: 30%;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+article p {
+    color: #555;
+}
+
+article a {
+    color: #00aef3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background-color: #00aef3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .container > div {
+    width: 30%;
+    margin: 10px 0;
+}
